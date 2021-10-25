@@ -27,7 +27,7 @@ Route::get('/post/{post}', [App\Http\Controllers\PostController::class, 'show'])
 Route::put('/post/comment',[App\Http\Controllers\CommentController::class,'store'])->name('post.comment');
 
 
-Route::get('/employee',[App\Http\Controllers\EmployeeController::class,'index']);
+// Route::get('/employee',[App\Http\Controllers\EmployeeController::class,'index']);
 
 Route::get('/users',[App\Http\Controllers\CommentController::class,'show_datatables'])->name('users');
 
